@@ -27,4 +27,4 @@ logging.debug("  sysName : %s", snmpString[0])
 logging.debug("  sysDescr: %s", snmpString[1])
 
 cpeName = cpe.getCPEName(snmpString[0])
-print(f"sysName  :{snmpString[0][1:-1]}\ncpeName  :{cpeName}\nsysDescr :{snmpString[1]}")
+print(f"sysName  :{snmpString[0]}\ncpeName  :{cpeName}\nsysDescr :{snmpString[1]}")
