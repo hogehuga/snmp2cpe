@@ -25,6 +25,12 @@ def getCPEName(sysDescr):
         verExtRel = re.findall(r'\).*', verAll)[0][1:-1]
         ret = f"cpe:2.3:o:cisco:ios:{verMajor}\({verMaint}\){verExtRel}:*:*:*:*:*:*:*"
         return ret
+    elif re.match(r'Juniper Networks, Inc.', sysDescr):
+        verAll = sysDescr.split()[sysDescr.split().index("JUNOS") + 1]
+        verMajor = re.findall(r'^[0-9]*.*R', verAll)[0][0:-1]
+        verMaint = re.findall(r'R[0-9]*.*,', verAll)[0][0:-1]
+        ret = f"cpe:2.3:o:juniper:junos:{verMajor}:{verMaint.lower()}:*:*:*:*:*:*"
+        return ret
     else:
         logging.info(
             "Can't match CPE regexp. Plz pull-request cpe.py and/or write snmpSysDescList.txt and/or Issue(welcome to issue only).")
