@@ -31,3 +31,24 @@ STRING: STRING: Cisco Internetwork Operating System Software IOS (tm) s72033_rp 
 Technical Support: http://www.cisco.com/techsupport
 Copyright (c) 1986-2005 by cisco Systems, Inc.
 ```
+
+## Cisco IOS-XE
+
+testcase4
+
+```
+STRING: STRING: Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 16.12.4, RELEASE SOFTWARE (fc5)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Thu 09-Jul-20 19:31 by m
+```
+
+testcase5
+
+```
+STRING: STRING: Cisco IOS Software, IOS-XE Software, Catalyst 4500 L3 Switch Software (cat4500es8-UNIVERSALK9-M), Version 03.06.07.E RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2017 by Cisco Systems, Inc.
+Compiled Wed
+```
+
